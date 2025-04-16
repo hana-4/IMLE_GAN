@@ -49,7 +49,7 @@ The **Stacked MNIST** dataset is constructed by taking three randomly sampled MN
 
 ## Sample Outputs
 
-Below are randomly drawn samples from the trained IMLE‑GAN on Stacked MNIST:
+Below are randomly drawn samples from the IMLE‑GAN trained for 50 epochs on Stacked MNIST:
 
 ![IMLE-GAN Samples](sample_imle_gan.png)
 
