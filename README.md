@@ -113,7 +113,8 @@ Below are randomly drawn samples from the trained IMLE‑GAN on Stacked MNIST:
 - **Real-World Datasets:** Apply to diverse multi-modal datasets (e.g., CIFAR-10, ImageNet subsets).  
 - **Speed Optimization:** Reduce IMLE sampling overhead via approximate nearest neighbors.
 ---
-## References 
+## References
+
 @inproceedings{yu2020inclusive,
   title     = {Inclusive {GAN}: Improving Data and Minority Coverage in Generative Models},
   author    = {Yu, Ning and Li, Ke and Zhou, Peng and Malik, Jitendra and Davis, Larry S. and Fritz, Mario},
@@ -121,3 +122,4 @@ Below are randomly drawn samples from the trained IMLE‑GAN on Stacked MNIST:
   year      = {2020},
   url       = {https://arxiv.org/abs/2004.03355}
 }
+
