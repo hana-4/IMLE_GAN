@@ -27,40 +27,23 @@ The **Stacked MNIST** dataset is constructed by taking three randomly sampled MN
 ## Model Architecture
 
 - **Generator**  
-  - Input: 100‑dimensional noise vector  
+  - Input: 256‑dimensional noise vector  
   - 4 transposed‑convolutional layers with batch norm + ReLU  
   - Output: 28×28×3 image with Tanh activation  
 
 - **Discriminator**  
-  - 4 convolutional layers with spectral normalization + LeakyReLU  
+  - 4 fully conected layers  + LeakyReLU  
   - Final dense layer outputs real/fake score  
 
 - **IMLE Component**  
   - For each real sample, generate multiple candidates and choose the one closest in feature space (via L2) to form the IMLE loss.  
   - Combined with the standard GAN adversarial loss.
 
----
-
-## Training Details
-
-- **Optimizer:** Adam (β₁=0.5, β₂=0.999)  
-- **Learning Rate:** 2e‑4 for both G and D  
-- **Batch Size:** 64  
-- **IMLE Samples per Real:** 8  
-- **Epochs:** 100  
 
 ---
 
-## Evaluation Metrics
-
-- **Mode Coverage:** Number of distinct digit‑triplet modes generated (max 1,000).  
-- **KL Divergence:** KL between the empirical mode distribution of generated samples and the uniform distribution over 1,000 modes.
-
-| Model       | Mode Coverage (of 1,000) | KL Divergence ↓ |
-|-------------|--------------------------:|----------------:|
-| IMLE‑GAN    | 957                      | 
-| StyleGAN-2  | 940                      | 
-
+## Evaluation 
+- This implementation achieved 95.7% mode coverage (957/1000) on Stacked MNIST as compared to StyleGan2 (94% mode coverage). 
 
 ---
 
