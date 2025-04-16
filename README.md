@@ -1,6 +1,6 @@
 # IMLE-GAN: Implicit Maximum Likelihood Estimation with GANs
 
-This repository contains an implementation of IMLE-GAN applied to the **Stacked MNIST** dataset. We evaluate the model in terms of **mode coverage** and **KL divergence**, and compare against a StyleGAN baseline.
+This repository contains an implementation of IMLE-GAN applied to the **Stacked MNIST** dataset. The model is evaluated in terms of **mode coverage** and **KL divergence**, and compared against a StyleGAN baseline.
 
 ---
 
@@ -20,8 +20,7 @@ This repository contains an implementation of IMLE-GAN applied to the **Stacked 
 ---
 
 ## Introduction
-
-IMLE-GAN combines the strengths of Implicit Maximum Likelihood Estimation (IMLE) with adversarial training to better cover the data distribution and reduce mode collapse. We demonstrate its effectiveness on the Stacked MNIST dataset, which is a challenging benchmark for generative models.
+In Generative Adversarial Networks, mode collapse refers to a phenomenon where the generator produces a limited variety of outputs, failing to capture the full diversity of the target distribution. This leads to a bias in the model, often underrepresenting minority classes. Mode collapse can severely affect the quality of generated samples, especially when the goal is to model complex and varied data distributions. IMLE-GAN combines the strengths of Implicit Maximum Likelihood Estimation (IMLE) with adversarial training to better cover the data distribution and tackle this shortcoming of GANs. This project demonstrates its effectiveness on the Stacked MNIST dataset, which is a challenging benchmark for generative models.
 
 ---
 
