@@ -103,9 +103,6 @@ Below are randomly drawn samples from the trained IMLE‑GAN on Stacked MNIST:
 
 ![IMLE-GAN Samples](sample_imle_gan.png)
 
-Below are samples from a StyleGAN-2 baseline for comparison:
-
-![StyleGAN-2 Samples](sample_stylegan.png)
 
 ---
 
@@ -115,12 +112,12 @@ Below are samples from a StyleGAN-2 baseline for comparison:
 - **Conditional IMLE‑GAN:** Condition on digit labels to further improve mode coverage.  
 - **Real-World Datasets:** Apply to diverse multi-modal datasets (e.g., CIFAR-10, ImageNet subsets).  
 - **Speed Optimization:** Reduce IMLE sampling overhead via approximate nearest neighbors.
-
 ---
-
-## Usage
-
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/hana-4/IMLE_GAN.git
-   cd IMLE_GAN
+## References 
+@inproceedings{yu2020inclusive,
+  title     = {Inclusive {GAN}: Improving Data and Minority Coverage in Generative Models},
+  author    = {Yu, Ning and Li, Ke and Zhou, Peng and Malik, Jitendra and Davis, Larry S. and Fritz, Mario},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2004.03355}
+}
